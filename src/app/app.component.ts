@@ -7,9 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hello-angular';
-  image = "../assets/img.jpg"
+  img = "../assets/img.jpg";
+  url = "https://www.bridgelabz.com/" ;
 
   ngOnInit(): void{
     this.title= "Hello From BridgeLabz.";
+    this.img= "../assets/img.jpg";
+    this.url= "https://www.bridgelabz.com/";
+  }
+  onClick($event: any){
+    console.log("Save button is clicked!",$event)
+    window.open(this.url, "_blanck");
   }
 }
