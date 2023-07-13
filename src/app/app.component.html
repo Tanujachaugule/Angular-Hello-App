@@ -6,8 +6,12 @@
           employement through a Lab worka.">
   
   </div>
-  <div>
-    <input [(ngModel)]="userName" /><br/><br/>
+  <div class="Hi">
+    
+    <input (input)="onInput($event)" [(ngModel)]="userName" />
+    <span class = error-output>{{this.nameError}}</span>
   </div>
   <router-outlet>
     </router-outlet>
+
+  
