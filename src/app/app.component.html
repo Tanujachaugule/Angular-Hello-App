@@ -1,10 +1,13 @@
 <div class = Tanuja>
-  <h1>
+  <h1>Hello {{this.userName}} from Bridgelabz</h1>
     {{this.title}}
     <img [src]="img" (click)="onClick($event)"
           alt ="The Bridgelabz logo: a Bridge to 
           employement through a Lab worka.">
-  </h1>
+  
+  </div>
+  <div>
+    <input [(ngModel)]="userName" /><br/><br/>
   </div>
   <router-outlet>
     </router-outlet>
